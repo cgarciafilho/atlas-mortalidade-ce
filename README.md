@@ -13,8 +13,9 @@ Universidade de Fortaleza (Unifor) ou de qualquer outra instituição a que o au
 
 **Pode conter erros, e é provável que contenha.** O pedido e as convenções de trabalho são de cgarciafilho; o plano, a
 obtenção dos dados, as definições, o código, os gráficos e os textos desta versão foram feitos por inteligência artificial
-em modo autônomo, e nenhuma pessoa conferiu os números até a data da página. A aba “Sobre esta versão” diz quem fez o
-quê e lista as decisões de método que ainda aguardam validação. Use com cautela e confira os números nas fontes oficiais
+em modo autônomo. As decisões de método foram validadas pelo autor em 04/10/2026; **a conferência dos números por pessoa
+está pendente**: ninguém leu ou recalculou sistematicamente os números, gráficos e textos até a data da página. A aba
+“Sobre esta versão” diz quem fez o quê e lista as decisões de método. Use com cautela e confira os números nas fontes oficiais
 (TabNet do DATASUS, IntegraSUS) antes de citar ou de decidir algo com base neles. As limitações estão na aba “Métodos”.
 
 ## Fontes
