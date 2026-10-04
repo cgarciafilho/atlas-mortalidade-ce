@@ -37,7 +37,7 @@ p{margin:0}a{color:var(--accent)}code{font:.85em ui-monospace,monospace;backgrou
 .top{display:flex;flex-direction:column;gap:8px}.title-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
 .chip{font:500 .74rem/1 ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;background:var(--warn-bg);color:var(--warn-ink);padding:6px 10px;border-radius:999px;white-space:nowrap}
 .theme{margin-left:auto;font-size:.8rem;color:var(--ink2);display:flex;gap:6px;align-items:center}.theme select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:4px 6px}
-.lede{color:var(--ink2);max-width:82ch}.stamp{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.8rem;color:var(--muted)}.stamp b{color:var(--ink2);font-weight:500}
+.lede{color:var(--ink2)}.stamp{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.8rem;color:var(--muted)}.stamp b{color:var(--ink2);font-weight:500}
 .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 12px;align-items:end;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
 .filters label{display:flex;flex-direction:column;gap:4px;font-size:.74rem;color:var(--ink2);font-weight:500;min-width:0}
 .filters label.wide{grid-column:span 2}
@@ -48,7 +48,7 @@ select:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{
 .tabs{display:flex;flex-wrap:wrap;gap:2px 4px;border-bottom:1px solid var(--rule)}
 .tabs button{font:500 .9rem/1 system-ui,sans-serif;color:var(--ink2);background:none;border:0;border-bottom:3px solid transparent;padding:11px 12px 9px;cursor:pointer;white-space:nowrap;border-radius:6px 6px 0 0}
 .tabs button:hover{background:var(--accent-soft);color:var(--ink)}.tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
-.panel{display:flex;flex-direction:column;gap:14px;padding-top:6px}.panel-lede{color:var(--ink2);max-width:86ch}.dyn{display:flex;flex-direction:column;gap:14px}
+.panel{display:flex;flex-direction:column;gap:14px;padding-top:6px}.panel-lede{color:var(--ink2)}.dyn{display:flex;flex-direction:column;gap:14px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .kpi{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:5px}
 .kpi .k{font-size:.8rem;color:var(--ink2);font-weight:500}.kpi .v{font:600 1.8rem/1.1 system-ui,sans-serif}.kpi .v small{font-size:.8rem;font-weight:500;color:var(--ink2)}.kpi .s{font-size:.78rem;color:var(--muted);line-height:1.4}
@@ -56,10 +56,10 @@ select:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{
 .card{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .c12{grid-column:span 12}.c7{grid-column:span 7}.c6{grid-column:span 6}.c5{grid-column:span 5}
 @media (max-width:900px){.c7,.c6,.c5{grid-column:span 12}.filters label.wide{grid-column:span 1}}
-.card header{display:flex;flex-direction:column;gap:3px}.sub{font-size:.84rem;color:var(--ink2);max-width:86ch}
+.card header{display:flex;flex-direction:column;gap:3px}.sub{font-size:.84rem;color:var(--ink2)}
 .hrow{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;justify-content:space-between}
 .per{font:500 .7rem/1 ui-monospace,monospace;color:var(--accent);background:var(--accent-soft);padding:4px 7px;border-radius:4px;white-space:nowrap}
-figcaption,.note{font-size:.8rem;color:var(--muted);max-width:92ch}.nr{display:inline;font-weight:500;color:var(--ink2)}
+figcaption,.note{font-size:.8rem;color:var(--muted)}.nr{display:inline;font-weight:500;color:var(--ink2)}
 .legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:.8rem;color:var(--ink2);align-items:center}.legend i{display:inline-block;width:12px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 .legend i.ln{height:0;width:16px;border-top:2px solid;border-radius:0;vertical-align:3px;background:none!important}.legend i.dash{border-top-style:dashed}
 .legend i.zone{background:var(--zone)!important;border:1px solid var(--rule);height:12px}.legend i.focus{background:none!important;border:2px solid var(--accent);border-bottom:0;border-radius:0;height:6px;width:16px;vertical-align:1px}.legend i.ast{background:none!important;width:8px;height:auto;font-style:normal}.legend i.ast::before{content:"*";color:var(--ink2);font-weight:600}
@@ -79,12 +79,12 @@ svg{width:100%;height:auto;display:block}svg text{font:12px system-ui,sans-serif
 svg .ylab{fill:var(--muted);font-size:11.5px}svg .axis{stroke:var(--axis);stroke-width:1}svg .grid{stroke:var(--grid);stroke-width:1}
 svg path.mun{stroke:var(--surface);stroke-width:.5;stroke-linejoin:round}svg [data-tip]:hover{opacity:.8}svg rect.hit:hover{opacity:1}
 svg .cell-t{font-size:10px;pointer-events:none}
-.tw{overflow-x:auto;max-height:520px;overflow-y:auto}table{border-collapse:collapse;font-size:.82rem;font-variant-numeric:tabular-nums;width:100%}
+.tw{overflow-x:auto;max-height:520px;overflow-y:auto}#fig-calc .tw{max-height:none}table{border-collapse:collapse;font-size:.82rem;font-variant-numeric:tabular-nums;width:100%}
 caption{text-align:left;font-weight:600;padding-bottom:6px;color:var(--ink)}th,td{padding:5px 10px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
 th{font-weight:600;color:var(--ink2);border-bottom:2px solid var(--rule);white-space:normal;vertical-align:bottom;position:sticky;top:0;background:var(--surface)}td.l,th.l{text-align:left;white-space:normal}
 details{font-size:.84rem}summary{cursor:pointer;color:var(--accent);width:fit-content}details[open] summary{margin-bottom:8px}
 .csvrow{display:flex;gap:10px;align-items:center;margin-top:6px}.csv{font:inherit;font-size:.8rem;color:var(--accent);background:none;border:1px solid var(--rule);border-radius:5px;padding:4px 8px;cursor:pointer}.csvmsg{font-size:.78rem;color:var(--muted)}
-.prose{gap:10px}.prose p,.prose li,.prose dd{max-width:80ch;color:var(--ink2);font-size:.92rem}.prose ul,.prose ol{margin:0;padding-left:1.25em;display:flex;flex-direction:column;gap:6px}
+.prose{gap:10px}.prose p,.prose li,.prose dd{color:var(--ink2);font-size:.92rem}.prose ul,.prose ol{margin:0;padding-left:1.25em;display:flex;flex-direction:column;gap:6px}
 .prose h3:not(:first-child){margin-top:8px}.prose dl{margin:0;display:flex;flex-direction:column;gap:3px}.prose dt{font-weight:600;font-size:.88rem;margin-top:5px}.prose dd{margin:0}
 .banner{background:var(--warn-bg);color:var(--warn-ink);border-radius:8px;padding:11px 14px;font-size:.9rem}.banner b{font-weight:600}
 .info{background:var(--accent-soft);color:var(--ink);border-radius:8px;padding:11px 14px;font-size:.88rem}
@@ -118,8 +118,8 @@ details.fbox[open]>summary{margin-bottom:10px}details.fbox .filters{background:n
 </section></details>
 <div class="applied" id="applied" role="status" aria-live="polite"></div>
 <div class="sharehint" id="sharehint" hidden>O endereço desta página guarda a aba e os filtros escolhidos: copie-o para mostrar a mesma visão a outra pessoa.</div>
-<nav class="tabs" role="tablist" aria-label="Abas do atlas"><button type="button" role="tab" id="t-panorama" data-tab="panorama" aria-controls="p-panorama" aria-selected="false" tabindex="-1">Panorama</button><button type="button" role="tab" id="t-causas" data-tab="causas" aria-controls="p-causas" aria-selected="false" tabindex="-1">Causas</button><button type="button" role="tab" id="t-idade" data-tab="idade" aria-controls="p-idade" aria-selected="false" tabindex="-1">Idade e sexo</button><button type="button" role="tab" id="t-territorio" data-tab="territorio" aria-controls="p-territorio" aria-selected="false" tabindex="-1">Território</button><button type="button" role="tab" id="t-infantil" data-tab="infantil" aria-controls="p-infantil" aria-selected="false" tabindex="-1">Mortalidade infantil</button><button type="button" role="tab" id="t-calendario" data-tab="calendario" aria-controls="p-calendario" aria-selected="false" tabindex="-1">Calendário</button><button type="button" role="tab" id="t-local" data-tab="local" aria-controls="p-local" aria-selected="false" tabindex="-1">Local e cor ou raça</button><button type="button" role="tab" id="t-qualidade" data-tab="qualidade" aria-controls="p-qualidade" aria-selected="false" tabindex="-1">Qualidade dos dados</button><button type="button" role="tab" id="t-metodos" data-tab="metodos" aria-controls="p-metodos" aria-selected="false" tabindex="-1">Métodos</button><button type="button" role="tab" id="t-sobre" data-tab="sobre" aria-controls="p-sobre" aria-selected="false" tabindex="-1">Sobre esta versão</button></nav>
-<section role="tabpanel" id="p-panorama" aria-labelledby="t-panorama" class="panel" hidden><h2 class="sr-only">Panorama</h2><p class="panel-lede">Quantas pessoas morreram, com que taxa, e de que grandes grupos de causas. Os dois gráficos mostram a série inteira; os números do alto valem para o período escolhido.</p><div class="dyn"></div></section><section role="tabpanel" id="p-causas" aria-labelledby="t-causas" class="panel" hidden><h2 class="sr-only">Causas</h2><p class="panel-lede">Comparação entre causas no período escolhido e evolução ano a ano das que mais pesam. Escolha um grupo no filtro para ver as causas dentro dele.</p><div class="dyn"></div></section><section role="tabpanel" id="p-idade" aria-labelledby="t-idade" class="panel" hidden><h2 class="sr-only">Idade e sexo</h2><p class="panel-lede">Como a mortalidade se distribui por idade e sexo.</p><div class="dyn"></div></section><section role="tabpanel" id="p-territorio" aria-labelledby="t-territorio" class="panel" hidden><h2 class="sr-only">Território</h2><p class="panel-lede">A medida escolhida por município, ADS e Superintendência Regional de residência.</p><div class="dyn"></div></section><section role="tabpanel" id="p-infantil" aria-labelledby="t-infantil" class="panel" hidden><h2 class="sr-only">Mortalidade infantil</h2><p class="panel-lede">Óbitos de menores de 1 ano, por idade ao morrer e por causa, e a taxa por mil nascidos vivos.</p><div class="dyn"></div></section><section role="tabpanel" id="p-calendario" aria-labelledby="t-calendario" class="panel" hidden><h2 class="sr-only">Calendário</h2><p class="panel-lede">Distribuição dos óbitos pelos meses do ano.</p><div class="dyn"></div></section><section role="tabpanel" id="p-local" aria-labelledby="t-local" class="panel" hidden><h2 class="sr-only">Local e cor ou raça</h2><p class="panel-lede">Onde o óbito ocorreu e a cor ou raça registrada na declaração. Contagens e proporções, não taxas.</p><div class="dyn"></div></section><section role="tabpanel" id="p-qualidade" aria-labelledby="t-qualidade" class="panel" hidden><h2 class="sr-only">Qualidade dos dados</h2><p class="panel-lede">O que os registros deixam de dizer, e as conferências feitas. Estes quadros são fixos: não respondem aos filtros.</p><div class="dyn"></div></section><section role="tabpanel" id="p-metodos" aria-labelledby="t-metodos" class="panel" hidden><h2 class="sr-only">Métodos</h2><div class="grid">
+<nav class="tabs" role="tablist" aria-label="Abas do atlas"><button type="button" role="tab" id="t-panorama" data-tab="panorama" aria-controls="p-panorama" aria-selected="false" tabindex="-1">Panorama</button><button type="button" role="tab" id="t-causas" data-tab="causas" aria-controls="p-causas" aria-selected="false" tabindex="-1">Causas</button><button type="button" role="tab" id="t-idade" data-tab="idade" aria-controls="p-idade" aria-selected="false" tabindex="-1">Idade e sexo</button><button type="button" role="tab" id="t-padronizacao" data-tab="padronizacao" aria-controls="p-padronizacao" aria-selected="false" tabindex="-1">Envelhecimento e padronização</button><button type="button" role="tab" id="t-territorio" data-tab="territorio" aria-controls="p-territorio" aria-selected="false" tabindex="-1">Território</button><button type="button" role="tab" id="t-infantil" data-tab="infantil" aria-controls="p-infantil" aria-selected="false" tabindex="-1">Mortalidade infantil</button><button type="button" role="tab" id="t-calendario" data-tab="calendario" aria-controls="p-calendario" aria-selected="false" tabindex="-1">Calendário</button><button type="button" role="tab" id="t-local" data-tab="local" aria-controls="p-local" aria-selected="false" tabindex="-1">Local e cor ou raça</button><button type="button" role="tab" id="t-qualidade" data-tab="qualidade" aria-controls="p-qualidade" aria-selected="false" tabindex="-1">Qualidade dos dados</button><button type="button" role="tab" id="t-metodos" data-tab="metodos" aria-controls="p-metodos" aria-selected="false" tabindex="-1">Métodos</button><button type="button" role="tab" id="t-sobre" data-tab="sobre" aria-controls="p-sobre" aria-selected="false" tabindex="-1">Sobre esta versão</button></nav>
+<section role="tabpanel" id="p-panorama" aria-labelledby="t-panorama" class="panel" hidden><h2 class="sr-only">Panorama</h2><p class="panel-lede">Quantas pessoas morreram, com que taxa, e de que grandes grupos de causas. Os dois gráficos mostram a série inteira; os números do alto valem para o período escolhido.</p><div class="dyn"></div></section><section role="tabpanel" id="p-causas" aria-labelledby="t-causas" class="panel" hidden><h2 class="sr-only">Causas</h2><p class="panel-lede">Comparação entre causas no período escolhido e evolução ano a ano das que mais pesam. Escolha um grupo no filtro para ver as causas dentro dele.</p><div class="dyn"></div></section><section role="tabpanel" id="p-idade" aria-labelledby="t-idade" class="panel" hidden><h2 class="sr-only">Idade e sexo</h2><p class="panel-lede">Como a mortalidade se distribui por idade e sexo.</p><div class="dyn"></div></section><section role="tabpanel" id="p-padronizacao" aria-labelledby="t-padronizacao" class="panel" hidden><h2 class="sr-only">Envelhecimento e padronização</h2><p class="panel-lede">Como a distribuição de idades da população mudou e o que isso faz com as taxas: por que este atlas compara anos e lugares pela taxa padronizada por idade. Vale sempre para todas as idades.</p><div class="dyn"></div></section><section role="tabpanel" id="p-territorio" aria-labelledby="t-territorio" class="panel" hidden><h2 class="sr-only">Território</h2><p class="panel-lede">A medida escolhida por município, ADS e Superintendência Regional de residência.</p><div class="dyn"></div></section><section role="tabpanel" id="p-infantil" aria-labelledby="t-infantil" class="panel" hidden><h2 class="sr-only">Mortalidade infantil</h2><p class="panel-lede">Óbitos de menores de 1 ano, por idade ao morrer e por causa, e a taxa por mil nascidos vivos.</p><div class="dyn"></div></section><section role="tabpanel" id="p-calendario" aria-labelledby="t-calendario" class="panel" hidden><h2 class="sr-only">Calendário</h2><p class="panel-lede">Distribuição dos óbitos pelos meses do ano.</p><div class="dyn"></div></section><section role="tabpanel" id="p-local" aria-labelledby="t-local" class="panel" hidden><h2 class="sr-only">Local e cor ou raça</h2><p class="panel-lede">Onde o óbito ocorreu e a cor ou raça registrada na declaração. Contagens e proporções, não taxas.</p><div class="dyn"></div></section><section role="tabpanel" id="p-qualidade" aria-labelledby="t-qualidade" class="panel" hidden><h2 class="sr-only">Qualidade dos dados</h2><p class="panel-lede">O que os registros deixam de dizer, e as conferências feitas. Estes quadros são fixos: não respondem aos filtros.</p><div class="dyn"></div></section><section role="tabpanel" id="p-metodos" aria-labelledby="t-metodos" class="panel" hidden><h2 class="sr-only">Métodos</h2><div class="grid">
 <div class="card c12 prose">
 <h3>O que é contado</h3>
 <ul>
@@ -147,7 +147,7 @@ Não sobrou nenhum óbito sem classificação (0).</p>
 <dt>Número de óbitos</dt><dd>Contagem dos registros que passam pelos filtros.</dd>
 <dt>Taxa bruta de mortalidade</dt><dd>Óbitos divididos pela população residente do mesmo território, sexo e idade, por 100 mil habitantes. Em período de vários anos, óbitos do período divididos pela soma da população dos anos (taxa média anual).</dd>
 <dt>Taxa padronizada por idade</dt><dd>Método direto: a taxa de cada uma das 17 faixas etárias (0 a 4, 5 a 9, …, 80 anos e mais) é ponderada pela população-padrão mundial da OMS (2000–2025). Serve para comparar anos e lugares com estruturas etárias diferentes; o valor em si não é a mortalidade de nenhuma população real.
-Com um filtro de idade, a padronização é feita dentro da faixa escolhida, e os óbitos de idade ignorada ficam fora. Sem filtro de idade, os óbitos de idade ignorada são distribuídos na proporção dos de idade conhecida da mesma seleção (mesmo período, território, sexo e causa).</dd>
+Com um filtro de idade, a padronização é feita dentro da faixa escolhida, e os óbitos de idade ignorada ficam fora. Sem filtro de idade, os óbitos de idade ignorada são distribuídos na proporção dos de idade conhecida da mesma seleção (mesmo período, território, sexo e causa). A aba “Envelhecimento e padronização” mostra a conta faixa por faixa, com os filtros escolhidos.</dd>
 <dt>Mortalidade infantil</dt><dd>Óbitos de menores de 1 ano divididos pelos nascidos vivos (SINASC) de mães residentes no mesmo território e ano, por mil. Cálculo direto, a partir de 1996. Para o Ceará inteiro, a aba mostra ao lado a estimativa do Ministério da Saúde (RIPSA, IDB-2012, indicador C.1), que vai até 2011.</dd>
 <dt>Sem intervalo de confiança</dt><dd>As contagens e taxas descrevem o que foi registrado, todo o universo e não uma amostra: saem como fato, sem intervalo. A incerteza que importa aqui é a do registro (o que não chegou ao sistema e o que chegou mal classificado), e ela não cabe num intervalo.
 Onde há poucos óbitos (menos de 10), a página avisa que a taxa é instável. Esse limiar é uma convenção deste atlas, sem fonte normativa.</dd>
@@ -224,7 +224,7 @@ Use com cautela e confira os números nas fontes oficiais (TabNet do DATASUS, In
 <li>Marcas de ano atípico (total de óbitos varia mais de 10%, ou mal definidas sobem mais de 1,5 ponto percentual), aviso de causa de um sexo só (97% ou mais dos óbitos de um sexo) e menos classes no mapa quando há menos de dez unidades: limiares escolhidos pela IA, sem fonte.</li>
 </ol>
 <h3>Conferência desta versão</h3>
-<p>Conferência desta página num navegador: 147 de 147 verificações passaram. Números da página contra cálculo direto da base: 300 de 300 combinações sorteadas de filtros iguais (900 comparações); no controle negativo, com um filtro trocado de propósito, a diferença foi acusada em 45 de 45 casos.</p>
+<p>Conferência desta página num navegador: 166 de 166 verificações passaram. Números da página contra cálculo direto da base: 300 de 300 combinações sorteadas de filtros iguais (900 comparações); no controle negativo, com um filtro trocado de propósito, a diferença foi acusada em 44 de 45 casos.</p>
 <h3>Contato</h3>
 <p>Erros, dúvidas e sugestões: <code>cgarciafilho@gmail.com</code></p>
 <h3>Como esta página funciona</h3>
@@ -348,9 +348,9 @@ function aggP(K, o) {
   }
   return out;
 }
-function rates(d, p, k, pk) {
+function rates(d, p, k, pk, all) {
   var nk = 0, pp = 0, acc = 0, ws = 0, bad = false, f, df, pf; if (pk === undefined) pk = k;
-  for (f = 0; f < NF; f++) { if (!PFOK[f]) continue; df = d[k * 18 + f]; pf = p[pk * NF + f]; nk += df; pp += pf; ws += W[f]; if (pf > 0) acc += W[f] * df / pf; else if (df > 0) bad = true; }
+  for (f = 0; f < NF; f++) { if (!all && !PFOK[f]) continue; df = d[k * 18 + f]; pf = p[pk * NF + f]; nk += df; pp += pf; ws += W[f]; if (pf > 0) acc += W[f] * df / pf; else if (df > 0) bad = true; }
   var unk = d[k * 18 + 17], n = nk + unk;
   return { n: n, unk: unk, pop: pp, tb: pp > 0 ? n / pp * 1e5 : null, tp: bad || !(pp > 0) || (nk === 0 && unk > 0) ? null : nk > 0 ? acc / ws * 1e5 * (1 + unk / nk) : 0 };
 }
@@ -368,21 +368,21 @@ function svg(W_, H, body, label, attrs) { return '<svg viewBox="0 0 ' + W_ + ' '
 function hit(x, y, w, h, tip) { return tip ? '<rect class="hit" x="' + f1(x) + '" y="' + f1(y) + '" width="' + f1(w) + '" height="' + f1(h) + '" fill="#000" fill-opacity="0" data-tip="' + esc(tip) + '"/>' : ''; }
 function vframe(W_, H, L, R_, T_, B, tk, ylabel) {
   var ph = H - T_ - B, max = tk[tk.length - 1], y = function (v) { return T_ + ph * (1 - v / max); }, d = tdec(tk), g = '';
-  tk.forEach(function (t) { g += '<line class="grid" x1="' + L + '" x2="' + (W_ - R_) + '" y1="' + f1(y(t)) + '" y2="' + f1(y(t)) + '"/><text x="' + (L - 8) + '" y="' + f1(y(t) + 4) + '" text-anchor="end">' + br(t, d) + '</text>'; });
+  tk.forEach(function (t) { g += '<line class="grid" x1="' + L + '" x2="' + (W_ - R_) + '" y1="' + f1(y(t)) + '" y2="' + f1(y(t)) + '"/><text x="' + (L - 8) + '" y="' + f1(y(t) + 4) + '" text-anchor="end">' + (t === 0 ? '0' : br(t, d)) + '</text>'; });
   g += '<line class="axis" x1="' + L + '" x2="' + (W_ - R_) + '" y1="' + f1(y(0)) + '" y2="' + f1(y(0)) + '"/>';
   if (ylabel) g += '<text class="ylab" x="4" y="14">' + esc(ylabel) + '</text>';
   return { g: g, y: y };
 }
 function hframe(W_, L, R_, T_, rows, rowh, tk) {
   var H = T_ + rowh * rows + 26, max = tk[tk.length - 1], x = function (v) { return L + (W_ - L - R_) * v / max; }, d = tdec(tk), g = '';
-  tk.forEach(function (t) { g += '<line class="grid" x1="' + f1(x(t)) + '" x2="' + f1(x(t)) + '" y1="' + T_ + '" y2="' + (H - 22) + '"/><text x="' + f1(x(t)) + '" y="' + (H - 6) + '" text-anchor="middle">' + br(t, d) + '</text>'; });
+  tk.forEach(function (t) { g += '<line class="grid" x1="' + f1(x(t)) + '" x2="' + f1(x(t)) + '" y1="' + T_ + '" y2="' + (H - 22) + '"/><text x="' + f1(x(t)) + '" y="' + (H - 6) + '" text-anchor="middle">' + (t === 0 ? '0' : br(t, d)) + '</text>'; });
   return { H: H, x: x, g: g };
 }
 function curto(s, n) { return s.length > n ? s.slice(0, n - 1).replace(/[\s,(]+$/, '') + '…' : s; }
 function maxOf(arrs) { var m = 0; arrs.forEach(function (a) { (a || []).forEach(function (v) { if (ok(v) && v > m) m = v; }); }); return m; }
-function yearLabels(ys, x, H, out) {
-  var n = ys.length, ev = n <= 12 ? (NARROW && n > 8 ? 2 : 1) : n <= 24 ? (NARROW ? 5 : 2) : (NARROW ? 10 : 5);
-  ys.forEach(function (yr, i) { if (ev >= 5 ? yr % ev === 0 || (PRE[yr] && i === n - 1 && x(i) - x(i - yr % ev) >= 34) : (n - 1 - i) % ev === 0) out.push('<text class="' + (PRE[yr] ? 'mut' : '') + '" x="' + f1(x(i)) + '" y="' + (H - 8) + '" text-anchor="middle">' + yr + (PRE[yr] ? '*' : '') + '</text>'); });
+function yearLabels(ys, x, H, out, noPre) {
+  var n = ys.length, PRE_ = noPre ? {} : PRE, ev = n <= 12 ? (NARROW && n > 8 ? 2 : 1) : n <= 24 ? (NARROW ? 5 : 2) : (NARROW ? 10 : 5);
+  ys.forEach(function (yr, i) { if (ev >= 5 ? yr % ev === 0 || (PRE_[yr] && i === n - 1 && x(i) - x(i - yr % ev) >= 34) : (n - 1 - i) % ev === 0) out.push('<text class="' + (PRE_[yr] ? 'mut' : '') + '" x="' + f1(x(i)) + '" y="' + (H - 8) + '" text-anchor="middle">' + yr + (PRE_[yr] ? '*' : '') + '</text>'); });
 }
 function yearMarks(ys, x, slot, T_, H, B, o, out) {
   (o.zones || []).forEach(function (z) {
@@ -402,12 +402,13 @@ function lines(ys, series, o) {
   o = o || {}; var W_ = cw(o.W), H = o.H || 320, multi = series.length > 1, L = 56, R_ = multi ? 64 : 44, T_ = 30, B = 40, n = ys.length, dec = o.dec === undefined ? 1 : o.dec;
   var tk = ticks((o.vmax || maxOf(series.map(function (s) { return s.v; }))) * 1.08), fr = vframe(W_, H, L, R_, T_, B, tk, o.ylabel), y = fr.y;
   var slot = (W_ - L - R_) / n, x = function (i) { return L + slot * (i + 0.5); }, out = [];
-  var late = yearMarks(ys, x, slot, T_, H, B, o, out); out.push(fr.g); yearLabels(ys, x, H, out);
+  var late = yearMarks(ys, x, slot, T_, H, B, o, out); out.push(fr.g); yearLabels(ys, x, H, out, o.noPre);
+  var PRE_ = o.noPre ? {} : PRE;
   series.forEach(function (s) {
     var idx = []; s.v.forEach(function (v, i) { if (ok(v)) idx.push(i); }); if (!idx.length) return;
     var seg = [], cur = [idx[0]]; for (var j = 1; j < idx.length; j++) { if (idx[j] === idx[j - 1] + 1) cur.push(idx[j]); else { seg.push(cur); cur = [idx[j]]; } } seg.push(cur);
     seg.forEach(function (g) { if (g.length > 1) out.push('<polyline fill="none" stroke="' + s.color + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"' + (s.dash ? ' stroke-dasharray="5 4"' : '') + ' points="' + g.map(function (i) { return f1(x(i)) + ',' + f1(y(s.v[i])); }).join(' ') + '"/>'); });
-    idx.forEach(function (i) { var h = PRE[ys[i]], small = n > 24 && !h && seg.every(function (g) { return g.length > 1; }); if (small) return; out.push('<circle cx="' + f1(x(i)) + '" cy="' + f1(y(s.v[i])) + '" r="' + (n <= 12 ? 4 : 3) + '" fill="' + (h ? 'var(--surface)' : s.color) + '" stroke="' + (h ? s.color : 'var(--surface)') + '" stroke-width="' + (h ? 2 : 1.5) + '"/>'); });
+    idx.forEach(function (i) { var h = PRE_[ys[i]], small = n > 24 && !h && seg.every(function (g) { return g.length > 1; }); if (small) return; out.push('<circle cx="' + f1(x(i)) + '" cy="' + f1(y(s.v[i])) + '" r="' + (n <= 12 ? 4 : 3) + '" fill="' + (h ? 'var(--surface)' : s.color) + '" stroke="' + (h ? s.color : 'var(--surface)') + '" stroke-width="' + (h ? 2 : 1.5) + '"/>'); });
     if (!multi) (idx.length > 1 ? (n > 12 ? [idx[idx.length - 1]] : [idx[0], idx[idx.length - 1]]) : idx).forEach(function (i) { out.push('<text class="val" x="' + f1(x(i)) + '" y="' + f1(Math.max(y(s.v[i]) - 9, 12)) + '" text-anchor="middle">' + br(s.v[i], dec) + '</text>'); });
   });
   if (multi) {
@@ -417,7 +418,7 @@ function lines(ys, series, o) {
   }
   ys.forEach(function (yr, i) {
     var parts = []; series.forEach(function (s) { if (ok(s.v[i])) parts.push(s.name + ': ' + br(s.v[i], dec) + (o.unit || '') + (s.kk ? ' (' + br(s.kk[i]) + ' ' + (s.kn || 'óbitos') + ')' : '')); });
-    if (parts.length) out.push(hit(x(i) - slot / 2, T_, slot, H - T_ - B, yr + (PRE[yr] ? ' (preliminar)' : '') + (o.yearNote ? o.yearNote(yr) : '') + '\n' + parts.join('\n')));
+    if (parts.length) out.push(hit(x(i) - slot / 2, T_, slot, H - T_ - B, yr + (PRE_[yr] ? ' (preliminar)' : '') + (o.yearNote ? o.yearNote(yr) : '') + '\n' + parts.join('\n')));
   });
   out.push(late); return svg(W_, H, out, o.label || '', ' data-years="1"');
 }
@@ -478,6 +479,24 @@ function pyramid(labels, left, right, o) {
   });
   return svg(W_, H, out, o.label || '');
 }
+function popPyramid(labels, b, a, o) {
+  o = o || {}; var W_ = 720, mid = 76, T_ = 22, rowh = 20, n = labels.length, H = T_ + rowh * n + 46, half = (W_ - mid) / 2 - 46, mx = Math.max(maxOf([b.l, b.r, a.l, a.r]), 0.1), tk = ticks(mx * 1.05, 4), max = tk[tk.length - 1], d = tdec(tk), cx = W_ / 2, out = [];
+  var sc = function (v) { return half * v / max; };
+  tk.forEach(function (t) { [1, -1].forEach(function (sg) { var xx = cx + sg * (mid / 2 + sc(t)); out.push('<line class="grid" x1="' + f1(xx) + '" x2="' + f1(xx) + '" y1="' + T_ + '" y2="' + (H - 42) + '"/><text x="' + f1(xx) + '" y="' + (H - 26) + '" text-anchor="middle">' + (t === 0 ? '0' : br(t, d)) + '</text>'); }); });
+  out.push('<text class="ylab" x="' + cx + '" y="' + (H - 6) + '" text-anchor="middle">' + esc(o.xlabel || '') + '</text>');
+  out.push('<text class="val" x="' + f1(cx - mid / 2 - 4) + '" y="13" text-anchor="end">Masculino</text><text class="val" x="' + f1(cx + mid / 2 + 4) + '" y="13">Feminino</text>');
+  var linha = function (s) { return s.y + ': masculino ' + br(s.l[i_], 1) + '% (' + br(s.nl[i_]) + '), feminino ' + br(s.r[i_], 1) + '% (' + br(s.nr[i_]) + ')'; }, i_;
+  labels.forEach(function (lb, i) {
+    var r = n - 1 - i, yc = T_ + rowh * r + rowh / 2; i_ = i;
+    out.push('<text class="sm" x="' + cx + '" y="' + f1(yc + 4) + '" text-anchor="middle">' + esc(lb) + '</text>');
+    out.push('<rect x="' + f1(cx - mid / 2 - sc(b.l[i])) + '" y="' + f1(yc - 7) + '" width="' + f1(Math.max(sc(b.l[i]), 0.5)) + '" height="14" rx="2" fill="var(--s1)"/>');
+    out.push('<rect x="' + f1(cx + mid / 2) + '" y="' + f1(yc - 7) + '" width="' + f1(Math.max(sc(b.r[i]), 0.5)) + '" height="14" rx="2" fill="var(--s2)"/>');
+    out.push('<rect class="ref" x="' + f1(cx - mid / 2 - sc(a.l[i])) + '" y="' + f1(yc - 9) + '" width="' + f1(Math.max(sc(a.l[i]), 0.5)) + '" height="18" fill="none" stroke="var(--ink)" stroke-width="1.5"/>');
+    out.push('<rect class="ref" x="' + f1(cx + mid / 2) + '" y="' + f1(yc - 9) + '" width="' + f1(Math.max(sc(a.r[i]), 0.5)) + '" height="18" fill="none" stroke="var(--ink)" stroke-width="1.5"/>');
+    out.push(hit(0, yc - rowh / 2, W_, rowh, lb + '\n' + linha(b) + '\n' + linha(a)));
+  });
+  return svg(W_, H, out, o.label || '');
+}
 function heat(rows, colsL, fill, text, tip, o) {
   o = o || {}; var LW = 54, T_ = 22, cw = o.cw || 70, ch = o.ch || 20, W_ = LW + cw * colsL.length + 6, H = T_ + ch * rows.length + 6, out = [];
   colsL.forEach(function (c, j) { out.push('<text x="' + f1(LW + cw * j + cw / 2) + '" y="14" text-anchor="middle">' + esc(c) + '</text>'); });
@@ -517,8 +536,8 @@ function legMarks(ys, o) {
   o = o || {}; var out = [], has = function (a) { return (a || []).some(function (y) { return ys.indexOf(y) >= 0; }); };
   if (o.focus) out.push(LEG_FOCUS);
   if (!o.noCid && ys.indexOf(CID10) > 0) out.push(LEG_CID);
-  if (ys.some(function (y) { return PRE[y]; })) out.push(o.bars ? LEG_PRE_BAR : LEG_PRE);
-  if (!o.noZone && S.med !== 'n' && zonesPop(ys).length) out.push(LEG_ZONE);
+  if (!o.noPre && ys.some(function (y) { return PRE[y]; })) out.push(o.bars ? LEG_PRE_BAR : LEG_PRE);
+  if (!o.noZone && (o.popAlways || S.med !== 'n') && zonesPop(ys, o.popAlways).length) out.push(LEG_ZONE);
   if (has(o.steps)) out.push(LEG_STEP);
   if (has(o.jumps)) out.push(LEG_JUMP);
   return out;
@@ -543,7 +562,7 @@ function naoResponde(lista) { return '<span class="nr">Este quadro não responde
 function fixo() { return '<span class="nr">Este quadro não responde aos filtros: vale para o Ceará inteiro, todas as idades e os dois sexos.</span>'; }
 var ORIG = { observado_POP: 'POP, como publicada', observado_POPSVS: 'POPSVS, como publicada', interpolado_1991_2000: 'interpolada entre 1991 e 2000', extrapolado_de_1980: 'extrapolada de 1980' };
 function seg(label, attr, cur, opts) { return '<div class="seg"><span class="seg-l">' + esc(label) + '</span><div class="seg-b">' + opts.map(function (o) { return '<button type="button" data-set="' + attr + '" data-val="' + o[0] + '" aria-pressed="' + (cur === o[0]) + '">' + esc(o[1]) + '</button>'; }).join('') + '</div></div>'; }
-function zonesPop(ys) { if (S.med === 'n') return []; var z = [], st = null; ys.forEach(function (y, i) { var est = M.pop_origem[y - A0].indexOf('observado') !== 0; if (est && st === null) st = y; if ((!est || i === ys.length - 1) && st !== null) { z.push({ from: st, to: est ? y : y - 1, cls: 'zone' }); st = null; } }); return z; }
+function zonesPop(ys, always) { if (S.med === 'n' && !always) return []; var z = [], st = null; ys.forEach(function (y, i) { var est = M.pop_origem[y - A0].indexOf('observado') !== 0; if (est && st === null) st = y; if ((!est || i === ys.length - 1) && st !== null) { z.push({ from: st, to: est ? y : y - 1, cls: 'zone' }); st = null; } }); return z; }
 function popNote(yr) { var o = M.pop_origem[yr - A0]; return S.med === 'n' || o.indexOf('observado') === 0 ? '' : ' · população estimada'; }
 var STEPS = {}; F.degraus.forEach(function (d) { (STEPS[d.grupo] = STEPS[d.grupo] || []).push(d.ano); });
 function stepsFor(g) { return g >= 0 && STEPS[M.grupos[g].k] ? STEPS[M.grupos[g].k] : []; }
@@ -702,6 +721,74 @@ function tabIdade() {
     { legend: legend([['Masculino', 'var(--s1)', 'ln'], ['Feminino', 'var(--s2)', 'ln']].concat(legMarks(ys, { steps: stepsFor(curGroup()) }))), minw: 560, cap: 'Óbitos de sexo ignorado ficam fora deste quadro. ' + naoResponde('de sexo (mostra os dois)') + notaMun(),
       table: table([{ k: 'ano', l: 'Ano', year: 1, left: 1 }, { k: 'nm', l: 'Óbitos, masculino' }, { k: 'tbm', l: 'Taxa bruta, masculino', d: 1 }, { k: 'tpm', l: 'Taxa padronizada, masculino', d: 1 }, { k: 'nf', l: 'Óbitos, feminino' }, { k: 'tbf', l: 'Taxa bruta, feminino', d: 1 }, { k: 'tpf', l: 'Taxa padronizada, feminino', d: 1 }, { k: 'rz', l: 'Razão das taxas padronizadas (masculino/feminino)', d: 2 }], srow) });
   return avisoPrelim() + avisoSexo() + avisoPoucos(sum(le) + sum(ri) + ign.ia + ign.is) + avisoCobertura() + avisoMalha() + '<div class="grid">' + c1 + c2 + c3 + c4 + '</div>';
+}
+var G3 = [['0 a 14 anos', [0, 1, 2]], ['15 a 59 anos', [3, 4, 5, 6, 7, 8, 9, 10, 11]], ['60 anos e mais', [12, 13, 14, 15, 16]]];
+function popSexAge(y) {
+  var out = new Float64Array(2 * NF), a = y - A0, m, s, f, b;
+  for (m = 0; m < NM; m++) { if (!MOK[m] || (S.mun >= 0 && y < FIRST[m])) continue; for (s = 0; s < 2; s++) { b = ((a * NM + m) * 2 + s) * NF; for (f = 0; f < NF; f++) out[s * NF + f] += POP[b + f]; } }
+  return out;
+}
+function aging() {
+  var ys = M.anos, pY = aggP('a', { full: true, noAge: true }), dY = aggO('a', { full: true, noAge: true }), d1 = aggO('one', { noAge: true }), p1 = aggP('one', { noAge: true });
+  var from = S.mun >= 0 ? FIRST[S.mun] : A0, pub = function (y) { return M.pop_origem[y - A0].indexOf('observado') === 0; };
+  var y0 = ys.filter(pub)[0], yA = ys.filter(function (y) { return y >= from && pub(y); })[0], yC = ys.filter(function (y) { return y >= from && M.pop_origem[y - A0] === 'observado_POPSVS'; })[0];
+  return { pY: pY, rY: ys.map(function (y, i) { return rates(dY, pY, i, i, true); }), d1: d1, p1: p1, r1: rates(d1, p1, 0, 0, true), y0: y0, yA: yA, yB: LASTDEF, yC: yC, pA: popSexAge(yA), pB: popSexAge(LASTDEF) };
+}
+function tabPadronizacao() {
+  var A = aging(), ys = M.anos, yA = A.yA, yB = A.yB, yC = A.yC, f, fxs = M.fxp.map(function (l) { return l.replace(' anos', '').replace(' e mais', '+'); });
+  var tot = function (p, k) { var t = 0; for (var x = 0; x < NF; x++) t += p[k * NF + x]; return t; };
+  var share = function (p, k, g) { var t = tot(p, k); return t > 0 ? 100 * sum(G3[g][1].map(function (x) { return p[k * NF + x]; })) / t : null; };
+  var wsum = sum(W), std = G3.map(function (g) { return 100 * sum(g[1].map(function (x) { return W[x]; })) / wsum; });
+  var rY = A.rY.map(function (r, i) { return semDado(S.mun, ys[i]) ? vazio(r) : r; }), rC = rY[yC - A0], rB = rY[yB - A0];
+  var vari = function (k) { return ok(rC[k]) && rC[k] > 0 && ok(rB[k]) ? 100 * (rB[k] / rC[k] - 1) : null; }, vb = vari('tb'), vp = vari('tp');
+  var sg = function (v) { return ok(v) ? (v > 0 ? '+' : '') + br(v, 1) : '–'; };
+  var k = kpis([
+    ['População com 60 anos e mais em ' + yB, br(share(A.pY, yB - A0, 2), 1) + '<small>%</small>', 'Residentes ' + terrEm() + ', ' + sexoNome() + '. Em ' + yA + ': ' + br(share(A.pY, yA - A0, 2), 1) + '%. Na população-padrão da OMS: ' + br(std[2], 1) + '%.'],
+    ['População de 0 a 14 anos em ' + yB, br(share(A.pY, yB - A0, 0), 1) + '<small>%</small>', 'Em ' + yA + ': ' + br(share(A.pY, yA - A0, 0), 1) + '%. Na população-padrão da OMS: ' + br(std[0], 1) + '%.'],
+    ['Taxa bruta, de ' + yC + ' a ' + yB, sg(vb) + '<small>%</small>', 'De ' + br(rC.tb, 1) + ' para ' + br(rB.tb, 1) + ' por 100 mil hab. (' + quem({ noAge: 1 }) + ', todas as idades).'],
+    ['Taxa padronizada por idade, de ' + yC + ' a ' + yB, sg(vp) + '<small>%</small>', 'De ' + br(rC.tp, 1) + ' para ' + br(rB.tp, 1) + ' por 100 mil hab. A padronizada mostra a variação com a distribuição de idades fixa; a bruta inclui o efeito da mudança dessa distribuição.']]);
+  var intro = prose(12, '<h3>Por que há duas taxas</h3>' +
+    '<p>O risco de morrer cresce muito com a idade. Uma população com mais idosos tem mais óbitos por 100 mil habitantes mesmo que o risco em cada idade seja igual, ou menor. A taxa bruta junta as duas coisas: o risco em cada idade e a proporção de pessoas em cada idade.</p>' +
+    '<p>A taxa padronizada por idade separa as duas. Ela aplica a taxa de cada faixa etária a uma população de referência fixa, a população-padrão mundial da OMS, igual para todos os anos e lugares, e responde à pergunta: qual seria a taxa se a distribuição de idades fosse sempre a mesma? Serve para comparar anos e lugares. O valor em si não é a mortalidade de nenhuma população real.</p>' +
+    '<p>Os dois primeiros quadros mostram quanto a distribuição de idades da população mudou. O terceiro mostra as duas taxas lado a lado. O quarto refaz a conta, faixa por faixa.</p>');
+  var pyr = function (p, y) { var t = sum(Array.prototype.slice.call(p)), o = { y: y, l: [], r: [], nl: [], nr: [] }; for (var x = 0; x < NF; x++) { o.nl.push(p[x]); o.nr.push(p[NF + x]); o.l.push(t > 0 ? 100 * p[x] / t : 0); o.r.push(t > 0 ? 100 * p[NF + x] / t : 0); } return o; };
+  var PB = pyr(A.pB, yB), PA = pyr(A.pA, yA);
+  var prow = M.fxp.map(function (l, x) { return { f: l, na: PA.nl[x], pa: PA.l[x], wa: PA.nr[x], qa: PA.r[x], nb: PB.nl[x], pb: PB.l[x], wb: PB.nr[x], qb: PB.r[x] }; });
+  var c1 = card(6, 'fig-popir', 'Distribuição da população por idade e sexo: ' + yA + ' e ' + yB, 'População residente ' + terrEm() + '. Percentual da população total de cada ano.',
+    popPyramid(fxs, PB, PA, { label: 'Distribuição da população por idade e sexo em ' + yA + ' e em ' + yB, xlabel: '% da população total do ano' }),
+    { badge: yA + ' e ' + yB, legend: legend([['Masculino, ' + yB, 'var(--s1)'], ['Feminino, ' + yB, 'var(--s2)'], ['Contorno: ' + yA, 'var(--ink)', 'selline']]),
+      cap: yA + (yA > A.y0 ? ' é o primeiro ano com população publicada em que ' + terrName() + ' tem dado neste atlas' : ' é o primeiro ano com população publicada pela fonte') + '; ' + yB + ', o último com arquivo definitivo de óbitos. ' + naoResponde('de período, de sexo, de idade nem ao de causa') + notaMun(A0),
+      table: table([{ k: 'f', l: 'Faixa etária', left: 1 }, { k: 'na', l: 'Masculino, ' + yA }, { k: 'pa', l: '%', d: 2 }, { k: 'wa', l: 'Feminino, ' + yA }, { k: 'qa', l: '%', d: 2 }, { k: 'nb', l: 'Masculino, ' + yB }, { k: 'pb', l: '%', d: 2 }, { k: 'wb', l: 'Feminino, ' + yB }, { k: 'qb', l: '%', d: 2 }], prow) });
+  var ord = ['var(--o2)', 'var(--o4)', 'var(--o6)'], est = function (yr) { return M.pop_origem[yr - A0].indexOf('observado') === 0 ? '' : ' · população estimada'; };
+  var ser = G3.map(function (g, j) { return { name: g[0], color: ord[j], kn: 'pessoas', v: ys.map(function (y, i) { return share(A.pY, i, j); }), kk: ys.map(function (y, i) { return sum(g[1].map(function (x) { return A.pY[i * NF + x]; })); }) }; });
+  var grow = ys.map(function (y, i) { var t = tot(A.pY, i), o = { ano: y, t: t > 0 ? t : null, org: ORIG[M.pop_origem[i]] }; ser.forEach(function (s_, j) { o['n' + j] = t > 0 ? s_.kk[i] : null; o['p' + j] = s_.v[i]; }); return o; });
+  var c2 = card(6, 'fig-pop3', 'Parcela de cada grupo de idade na população, por ano', 'População residente ' + terrEm() + ', ' + sexoNome() + '. Percentual da população de cada ano.',
+    lines(ys, ser, { W: 620, H: 400, dec: 1, unit: '%', ylabel: '% da população', label: 'Parcela da população em três grupos de idade, por ano', noCid: true, noPre: true, zones: zonesPop(ys, true), yearNote: est }),
+    { badge: ys[0] + '–' + ys[ys.length - 1] + ' · série completa', minw: 420, legend: legend(ser.map(function (s_) { return [s_.name, s_.color, 'ln']; }).concat(legMarks(ys, { noCid: 1, noPre: 1, popAlways: 1 }))),
+      cap: 'Na população-padrão da OMS, usada na taxa padronizada, as parcelas são fixas: ' + lista(G3.map(function (g, j) { return br(std[j], 1) + '% de ' + g[0]; })) + '. A fonte da população muda em ' + yC + ' (aba Métodos). ' + naoResponde('de período, de idade nem ao de causa') + notaMun(A0),
+      table: table([{ k: 'ano', l: 'Ano', year: 1, left: 1 }, { k: 't', l: 'População' }, { k: 'org', l: 'Origem da população' }].concat(ser.reduce(function (acc, s_, j) { return acc.concat([{ k: 'n' + j, l: s_.name }, { k: 'p' + j, l: '%', d: 1 }]); }, [])), grow) });
+  var foc = [{ from: S.y0, to: S.y1, cls: 'focus' }], verbo = function (v) { return !ok(v) ? null : v > 0 ? 'subiu ' + br(v, 1) + '%' : v < 0 ? 'caiu ' + br(-v, 1) + '%' : 'não mudou'; };
+  var comp = verbo(vb) && verbo(vp) ? 'De ' + yC + ' a ' + yB + ', a taxa bruta ' + verbo(vb) + ' e a padronizada ' + verbo(vp) + '. A comparação parte de ' + yC + ' porque é o primeiro ano da série de população em uso até hoje (POPSVS): as duas pontas têm o denominador da mesma fonte. ' : '';
+  var c3 = card(12, 'fig-brutapad', 'Taxa bruta e taxa padronizada por idade, série completa', desc({ noAge: 1 }) + ' Todas as idades. Por 100 mil habitantes, por ano.',
+    lines(ys, [{ name: 'Taxa bruta', v: rY.map(function (r) { return r.tb; }), color: 'var(--s2)' }, { name: 'Taxa padronizada por idade', v: rY.map(function (r) { return r.tp; }), color: 'var(--s1)' }], { dec: 1, unit: ' por 100 mil hab.', ylabel: 'por 100 mil hab.', label: 'Taxa bruta e taxa padronizada por idade, por ano', zones: foc.concat(zonesPop(ys, true)), yearNote: est }),
+    { badge: ys[0] + '–' + ys[ys.length - 1] + ' · série completa', minw: 640, legend: legend([['Taxa bruta', 'var(--s2)', 'ln'], ['Taxa padronizada por idade', 'var(--s1)', 'ln']].concat(legMarks(ys, { focus: 1, popAlways: 1 }))),
+      cap: comp + 'A taxa padronizada fica acima da bruta quando a população-padrão dá mais peso que a população real às idades de taxa alta, e abaixo quando dá menos (quadro seguinte). O registro dos óbitos ficou mais completo ao longo da série (a RIPSA estimou que o SIM do Ceará captava ' + nota('ripsa.ce_1991_pct') + '% dos óbitos em 1991, ' + nota('ripsa.ce_2000_pct') + '% em 2000 e ' + nota('ripsa.ce_2011_pct') + '% em 2011, em duas séries que não se emendam): parte da variação das duas taxas é mudança do registro, não do risco. ' + naoResponde('de idade nem ao de medida (mostra as duas taxas, de todas as idades)') + notaMun(A0),
+      table: table(YCOLS, yearRows(ys, rY)) });
+  var d1 = A.d1, p1 = A.p1, r1 = A.r1, P = tot(p1, 0), nk = 0, unk = d1[17], wr = [], wo = [], crow = [], sb = 0, sp = 0, okp = true, ny = nYears();
+  for (f = 0; f < NF; f++) {
+    var tx = p1[f] > 0 ? d1[f] / p1[f] * 1e5 : null, a = P > 0 ? 100 * p1[f] / P : null, w = 100 * W[f] / wsum, cb = ok(tx) && ok(a) ? tx * a / 100 : null, cp = ok(tx) ? tx * w / 100 : null;
+    nk += d1[f]; wr.push(a); wo.push(w); if (ok(cb)) sb += cb; if (ok(cp)) sp += cp; else if (d1[f] > 0) okp = false;
+    crow.push({ f: M.fxp[f], d: d1[f], p: p1[f], tx: tx, a: a, w: w, cb: cb, cp: cp });
+  }
+  crow.push({ f: 'Soma', d: nk, p: P, tx: null, a: P > 0 ? 100 : null, w: 100, cb: P > 0 ? sb : null, cp: P > 0 && okp ? sp : null });
+  var body4 = '<div class="chart" style="--minw:' + (NARROW ? 540 : 560) + 'px">' + cols(fxs, [{ name: 'População real', v: wr, color: 'var(--s2)' }, { name: 'População-padrão da OMS', v: wo, color: 'var(--s1)' }], { dec: 2, unit: '%', ylabel: '% da população', H: 280, catEvery: NARROW ? 2 : 1, label: 'Peso de cada faixa etária na população real e na população-padrão' }) + '</div>' +
+    table([{ k: 'f', l: 'Faixa etária', left: 1 }, { k: 'd', l: 'Óbitos' }, { k: 'p', l: ny === 1 ? 'População' : 'Pessoas-ano' }, { k: 'tx', l: 'Taxa da faixa, por 100 mil', d: 1 }, { k: 'a', l: 'Peso na população real, %', d: 2 }, { k: 'w', l: 'Peso na população-padrão, %', d: 2 }, { k: 'cb', l: 'Taxa × peso real', d: 2 }, { k: 'cp', l: 'Taxa × peso padrão', d: 2 }], crow, 'A conta, faixa por faixa');
+  var ign = unk > 0 && nk > 0 ? (unk === 1 ? 'O óbito de idade ignorada não tem faixa: entra' : 'Os ' + br(unk) + ' óbitos de idade ignorada não têm faixa: entram') + ' multiplicando as duas somas por ' + br(nk + unk) + ' ÷ ' + br(nk) + ' (total de óbitos dividido pelos de idade conhecida). ' : '';
+  var c4 = card(12, 'fig-calc', 'A conta das duas taxas, faixa por faixa', desc({ noAge: 1 }) + ' Todas as idades, ' + perTot() + '. As colunas comparam o peso de cada faixa etária na população real e na população-padrão da OMS.', body4,
+    { legend: legend([['População real: ' + terrName() + ', ' + per(), 'var(--s2)'], ['População-padrão mundial da OMS', 'var(--s1)']]),
+      cap: 'Taxa bruta: soma, em todas as faixas, da taxa da faixa multiplicada pelo peso da faixa na população real. Taxa padronizada: a mesma soma, com o peso da população-padrão. ' + ign + 'Resultado: taxa bruta de ' + br(r1.tb, 1) + ' e taxa padronizada de ' + br(r1.tp, 1) + ' por 100 mil habitantes, as mesmas do alto da aba Panorama com o filtro de idade em “todas as idades”. ' + (ny > 1 ? 'Em período de mais de um ano, a população é a soma das populações dos anos (pessoas-ano), e as taxas são as do período inteiro. ' : '') + naoResponde('de idade nem ao de medida') + notaMun() });
+  var todas = S.ag > 0 ? '<div class="info"><b>Todas as idades.</b> Esta aba compara distribuições de idade: o filtro de idade escolhido (' + idadeNome() + ') não vale aqui.</div>' : '';
+  return k + todas + avisoPrelim() + avisoSexo() + avisoPoucos(r1.n) + avisoMalha() + '<div class="grid">' + intro + c1 + c2 + c3 + c4 + '</div>';
 }
 function byMun() {
   var d = aggO('mun', { noTerr: true }), p = aggP('mun', { noTerr: true }), pf = aggP('mun', { noTerr: true, first: true }), rm = [], dA = new Float64Array(NA * 18), pA = new Float64Array(NA * 17), dS = new Float64Array(NSR * 18), pS = new Float64Array(NSR * 17), m, f;
@@ -930,7 +1017,7 @@ function tabQualidade() {
     { badge: 'conferido em ' + M.gerado_em.split('-').reverse().join('/'), cap: 'Ao todo, ' + br(R('tabnet.obitos.celulas') + R('tabnet.pop_nv.celulas')) + ' células comparadas e ' + br(R('tabnet.obitos.celulas_diferentes') + R('tabnet.pop_nv.celulas_diferentes')) + ' diferentes. O TabNet e os arquivos usados aqui saem da mesma base do DATASUS: a igualdade confere a leitura e as regras deste atlas, não a qualidade do registro. ' + NR });
   return '<div class="grid">' + c1 + c2 + c3 + c4 + c5 + '</div>';
 }
-var TABS = { panorama: tabPanorama, causas: tabCausas, idade: tabIdade, territorio: tabTerritorio, infantil: tabInfantil, calendario: tabCalendario, local: tabLocal, qualidade: tabQualidade };
+var TABS = { panorama: tabPanorama, causas: tabCausas, idade: tabIdade, padronizacao: tabPadronizacao, territorio: tabTerritorio, infantil: tabInfantil, calendario: tabCalendario, local: tabLocal, qualidade: tabQualidade };
 function applied() {
   var p = [per(), terrName(), S.sx === 0 ? 'Masculino' : S.sx === 1 ? 'Feminino' : 'Ambos os sexos', AG[S.ag][0], causaCurta(), medNome()];
   document.getElementById('applied').textContent = 'Filtros aplicados: ' + p.join(' · ') + '. Toda contagem e toda taxa são por município de residência.' + (S.ag > 0 ? ' Com uma faixa de idade escolhida, os óbitos de idade ignorada ficam fora.' : '') + (prelimNoPeriodo().length ? ' O período inclui ' + anosTxt(prelimNoPeriodo()) + ', ano com arquivo preliminar.' : '') + (S.mun >= 0 && nYearsData() < nYears() ? ' ' + M.mun[S.mun] + ' só tem óbitos registrados a partir de ' + FIRST[S.mun] + ': taxas e médias do período contam desse ano em diante.' : '');
@@ -1037,6 +1124,7 @@ window.atlas = { meta: M, set: set, token: token, get: function () { return JSON
   rank: function () { prep(); return causeRank(); },
   sexAge: function () { prep(); var a = sexAge(); return { sf: Array.prototype.slice.call(a.sf), rt: a.rt, d17: a.d17 }; },
   sexYear: function () { prep(); return sexYear().map(function (s) { return s.map(plain); }); },
+  aging: function () { prep(); var a = aging(), sl = function (x) { return Array.prototype.slice.call(x); }; return { pY: sl(a.pY), rY: a.rY.map(plain), d1: sl(a.d1), p1: sl(a.p1), r1: plain(a.r1), y0: a.y0, yA: a.yA, yB: a.yB, yC: a.yC, pA: sl(a.pA), pB: sl(a.pB) }; },
   group: function (full) { prep(); return Array.prototype.slice.call(agg2('a', 'grupo', { full: full, noCause: true })); },
   infant: function () { prep(); var I = infant(); return { yc: Array.prototype.slice.call(I.yc), cau: Array.prototype.slice.call(I.cau), nvY: I.nvY, munN: Array.prototype.slice.call(I.munN), munNnv: Array.prototype.slice.call(I.munNnv), nvM: Array.prototype.slice.call(I.nvM) }; },
   month: function () { prep(); return Array.prototype.slice.call(month()); },

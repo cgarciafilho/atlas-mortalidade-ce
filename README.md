@@ -1,7 +1,7 @@
 # Atlas de Mortalidade do Ceará — painel (versão preliminar)
 
 Painel interativo com os óbitos de residentes no Ceará registrados no Sistema de Informação sobre Mortalidade (SIM), de 1979 a
-2025 (2025 preliminar): causas, idade e sexo, municípios e regiões de saúde, mortalidade infantil, meses do ano, local de
+2025 (2025 preliminar): causas, idade e sexo, envelhecimento da população e padronização das taxas, municípios e regiões de saúde, mortalidade infantil, meses do ano, local de
 ocorrência e qualidade dos registros. É uma página única (`index.html`): as contagens estão embutidas nela, e os filtros
 funcionam no navegador, sem servidor e sem internet depois de aberta.
 
