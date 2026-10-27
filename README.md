@@ -16,8 +16,8 @@ Universidade de Fortaleza (Unifor) ou de qualquer outra instituição a que o au
 de cgarciafilho: o pedido, as convenções de trabalho, as regras de rigor e o método (o Atlas de Mortalidade do Ceará
 1979–2024, de junho–julho de 2026, e os painéis de anomalias congênitas e de leishmaniose visceral) são dele; a execução
 desta versão (o plano, a obtenção dos dados, as definições, o código, os gráficos e os textos) foi da IA, em modo
-autônomo. As decisões de método foram validadas pelo autor em 04/10/2026; **a conferência dos números por pessoa
-está pendente**: ninguém leu ou recalculou sistematicamente os números, gráficos e textos até a data da página. A aba
+autônomo. As decisões de método foram validadas pelo autor em 04/10/2026, e **a conferência por pessoa foi parcial**
+(27/10/2026): o autor conferiu parte dos números, gráficos e textos, não todos. A aba
 “Sobre esta versão” diz quem fez o quê e lista as decisões de método. Use com cautela e confira os números nas fontes oficiais
 (TabNet do DATASUS, IntegraSUS) antes de citar ou de decidir algo com base neles. As limitações estão na aba “Métodos”.
 
